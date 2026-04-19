@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aether — The operating system for cosmic creators</title>
+<link rel="stylesheet" href="styles.css?v=9" />
+</head>
+<body>
+  <!-- cosmic background -->
+  <div class="cosmos" aria-hidden="true">
+    <canvas id="stars-canvas" style="position:absolute;inset:0;width:100%;height:100%"></canvas>
+    <div class="grain"></div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor dot" id="cursorDot"></div>
+
+  <!-- nav -->
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true"></span>
+      Aether
+    </a>
+    <ul>
+      <li><a href="#features" data-magnet>Features</a></li>
+      <li><a href="#showcase" data-magnet>Showcase</a></li>
+      <li><a href="#how" data-magnet>How it works</a></li>
+      <li><a href="#testimonials" data-magnet>Voices</a></li>
+      <li><a href="#pricing" data-magnet>Pricing</a></li>
+    </ul>
+    <a class="nav-cta" href="#cta" data-magnet>Get early access</a>
+  </nav>
+
+  <main class="page" id="top">
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <!-- Full-bleed hero video background -->
+      <div class="hero-bg" id="heroBg" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto">
+          <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260307_083826_e938b29f-a43a-41ec-a153-3d4730578ab8.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-bg-scrim"></div>
+      </div>
+
+      <!-- Floating stat orbs -->
+      <div class="orb orb-a" data-parallax="0.5">
+        <div>
+          <div class="big">2.4M</div>
+          <div class="sub">Renders / week</div>
+        </div>
+      </div>
+      <div class="orb orb-b" data-parallax="-0.6">
+        <div>
+          <div class="big">0.3s</div>
+          <div class="sub">Cold-start time</div>
+        </div>
+      </div>
+      <div class="orb orb-c" data-parallax="0.4">
+        <div>
+          <div class="big">48k+</div>
+          <div class="sub">Creators orbiting</div>
+        </div>
+      </div>
+
+      <div class="hero-inner">
+        <span class="eyebrow reveal-eyebrow">v2 · now in private beta</span>
+        <h1 class="hero-title">
+          <span class="line"><span class="w">The</span> <span class="w">operating</span></span>
+          <span class="line"><span class="w">system</span> <span class="w">for</span></span>
+          <span class="line text-gradient"><span class="w">cosmic</span> <span class="w">creators.</span></span>
+        </h1>
+        <p class="sub reveal-sub">
+          Aether is where motion designers, 3D artists and indie filmmakers
+          generate, animate and host cinematic visuals — without ever leaving the browser.
+        </p>
+        <div class="cta-row reveal-cta">
+          <a class="btn btn-primary" href="#cta" data-magnet>
+            Start creating in the cosmos
+            <span class="arrow" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+          <a class="btn btn-ghost" href="#" data-magnet>
+            <span class="play" aria-hidden="true">
+              <svg width="8" height="8" viewBox="0 0 8 8"><path d="M1 0.5L7 4L1 7.5V0.5Z" fill="currentColor"/></svg>
+            </span>
+            Watch 2-minute demo
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-meta">
+        <div><span>◐</span><span>Realtime render cluster · online</span></div>
+        <div class="v-line"></div>
+        <div><span>LAT 40.7°N</span></div>
+        <div class="v-line"></div>
+        <div><span>scroll ↓</span></div>
+      </div>
+    </section>
+
+    <!-- TRUSTED BY -->
+    <section class="trusted">
+      <div class="container">
+        <span class="eyebrow">Trusted by teams at</span>
+        <div class="trusted-row">
+          <div class="trusted-logo"><span class="mark circle"></span>Orbital</div>
+          <div class="trusted-logo"><span class="mark"></span>Paragon</div>
+          <div class="trusted-logo"><span class="mark tri"></span>Lumen</div>
+          <div class="trusted-logo"><span class="mark circle"></span>Nyx Studio</div>
+          <div class="trusted-logo"><span class="mark"></span>Helix</div>
+          <div class="trusted-logo"><span class="mark tri"></span>Vantage</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="lead">
+            <span class="eyebrow">01 · Capabilities</span>
+            <h2 style="margin-top:16px">One toolkit.<br/><span class="text-gradient">Infinite trajectories.</span></h2>
+          </div>
+          <p>Every Aether primitive is built to feel like sculpting light. Heavy lifting — shaders, compositing, caching — happens on our render cluster so your browser stays silky.</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1 : tall, nebula -->
+          <article class="glass feature-card tall reveal tilt" data-tilt>
+            <span class="tag">GENERATIVE</span>
+            <div class="fc-viz"><img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=1200&q=80" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;opacity:0.85;"/><div class="fc-viz-scrim"></div></div>
+            <h3>Prompt a universe into existence.</h3>
+            <p>Describe a mood, a motion, a material. Aether's diffusion engine renders cinematic cosmos in seconds — then hands you the editable scene graph.</p>
+          </article>
+
+          <!-- Card 2 : grid orbit -->
+          <article class="glass feature-card reveal delay-1 tilt" data-tilt>
+            <span class="tag">REAL-TIME</span>
+            <div class="fc-viz"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;opacity:0.8;"/><div class="fc-viz-scrim"></div></div>
+            <h3>Realtime render cluster.</h3>
+            <p>GPU fleet on tap. 4K scenes in milliseconds.</p>
+          </article>
+
+          <!-- Card 3 : waves -->
+          <article class="glass feature-card reveal delay-2 tilt" data-tilt>
+            <span class="tag">MOTION</span>
+            <div class="fc-viz"><img src="https://images.unsplash.com/photo-1464802686167-b939a6910659?w=1200&q=80" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;opacity:0.8;"/><div class="fc-viz-scrim"></div></div>
+            <h3>Keyframe the uncanny.</h3>
+            <p>Procedural timelines, particle orchestration, physics. All with a single dial.</p>
+          </article>
+
+          <!-- Card 4 : code -->
+          <article class="glass feature-card reveal delay-3 tilt" data-tilt>
+            <span class="tag">DEPLOY</span>
+            <div class="fc-viz"><img src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=1200&q=80" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;opacity:0.8;"/><div class="fc-viz-scrim"></div></div>
+            <h3>Ship to any stack.</h3>
+            <p>One line of JS. React, Next, Astro, raw HTML.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASE horizontal scroller -->
+    <section id="showcase" class="showcase">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="lead">
+            <span class="eyebrow">02 · Made with Aether</span>
+            <h2 style="margin-top:16px">Transmissions from<br/><span class="text-gradient">the edge of the feed.</span></h2>
+          </div>
+          <p>Six worlds built by Aether creators this month. Scroll sideways — each one is a live scene you can remix.</p>
+        </div>
+      </div>
+
+      <div class="scroller" id="showcaseScroller">
+        <article class="card">
+          <div class="cover cover-1"><img src="https://images.unsplash.com/photo-1538370965046-79c0d6907d47?w=900&q=80" alt="" loading="lazy"/><div class="cover-stars"></div></div>
+          <div class="meta">
+            <div class="num">01 / Rendered by @lior.dev</div>
+            <h4>Chromatic Drift</h4>
+            <div class="tags"><span class="tag">Motion</span><span class="tag">Generative</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="cover cover-2"><img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=900&q=80" alt="" loading="lazy"/><div class="cover-stars"></div></div>
+          <div class="meta">
+            <div class="num">02 / Rendered by @neons.studio</div>
+            <h4>Silent Transit</h4>
+            <div class="tags"><span class="tag">3D</span><span class="tag">Cinematic</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="cover cover-3"><img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=900&q=80" alt="" loading="lazy"/><div class="cover-stars"></div></div>
+          <div class="meta">
+            <div class="num">03 / Rendered by @kai.orbit</div>
+            <h4>Meridian / 07</h4>
+            <div class="tags"><span class="tag">Product</span><span class="tag">Landing</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="cover cover-4"><img src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?w=900&q=80" alt="" loading="lazy"/><div class="cover-stars"></div></div>
+          <div class="meta">
+            <div class="num">04 / Rendered by @yume.mx</div>
+            <h4>Kōgai Season</h4>
+            <div class="tags"><span class="tag">Editorial</span><span class="tag">AI</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="cover cover-5"><img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=900&q=80" alt="" loading="lazy"/><div class="cover-stars"></div></div>
+          <div class="meta">
+            <div class="num">05 / Rendered by @io.noctis</div>
+            <h4>Deep Field 2196</h4>
+            <div class="tags"><span class="tag">Film</span><span class="tag">Score</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="cover cover-6"><img src="https://images.unsplash.com/photo-1451188502541-13943edb6acb?w=900&q=80" alt="" loading="lazy"/><div class="cover-stars"></div></div>
+          <div class="meta">
+            <div class="num">06 / Rendered by @studio.pareidolia</div>
+            <h4>Interlude — Violet</h4>
+            <div class="tags"><span class="tag">Music</span><span class="tag">Loop</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="container">
+        <div class="showcase-hint">← drag to explore · 06 worlds</div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="lead">
+            <span class="eyebrow">03 · The flight path</span>
+            <h2 style="margin-top:16px">Three steps from<br/><span class="text-gradient">prompt to orbit.</span></h2>
+          </div>
+          <p>Most cosmic scenes ship in under twelve minutes. You'll spend most of that time picking the palette.</p>
+        </div>
+
+        <div class="steps">
+          <article class="glass step reveal" data-parallax="0.1">
+            <div class="num">01</div>
+            <div class="body">
+              <h3>Describe the scene.</h3>
+              <p>Type a prompt, sketch a storyboard, or drop a reference. Aether parses mood, motion and material into a scene graph.</p>
+            </div>
+            <div class="step-viz"><img src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=400&q=80" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;"/></div>
+          </article>
+          <article class="glass step reveal delay-1" data-parallax="0.1">
+            <div class="num">02</div>
+            <div class="body">
+              <h3>Tune the physics.</h3>
+              <p>Nudge timelines, rebind cameras, swap shaders — all in a glassy canvas that feels like weightlessness.</p>
+            </div>
+            <div class="step-viz"><img src="https://images.unsplash.com/photo-1464802686167-b939a6910659?w=400&q=80" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;"/></div>
+          </article>
+          <article class="glass step reveal delay-2" data-parallax="0.1">
+            <div class="num">03</div>
+            <div class="body">
+              <h3>Ship anywhere.</h3>
+              <p>Export a self-contained scene, embed one line of JS, or hand off a 4K film. It's your orbit.</p>
+            </div>
+            <div class="step-viz"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&q=80" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;"/></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="lead">
+            <span class="eyebrow">04 · Voices in orbit</span>
+            <h2 style="margin-top:16px">From the people<br/>already out there.</h2>
+          </div>
+          <p>Aether creators build for record labels, Apple keynotes, climate nonprofits, indie filmmakers.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="glass testi reveal">
+            <p class="quote">"Every tool before this felt like filing paperwork to make beauty. Aether just renders the thing you were seeing when you closed your eyes."</p>
+            <div class="who">
+              <div class="avatar" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&q=80');background-size:cover;background-position:center;color:transparent;">LR</div>
+              <div><div class="name">Lior Ravid</div><div class="role">Motion Lead · Paragon</div></div>
+            </div>
+          </article>
+          <article class="glass testi reveal delay-1">
+            <p class="quote">"Shipped a 12-scene title sequence in a weekend. The render cluster is genuinely absurd — nothing buffered, nothing re-exported."</p>
+            <div class="who">
+              <div class="avatar" style="background-image:url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&q=80');background-size:cover;background-position:center;color:transparent;">KS</div>
+              <div><div class="name">Kenji Sato</div><div class="role">Director · Nyx Studio</div></div>
+            </div>
+          </article>
+          <article class="glass testi reveal delay-2">
+            <p class="quote">"Our landing page now feels like a trailer. Conversion is up 38%. I don't know how to explain that in a deck so I just point people at the URL."</p>
+            <div class="who">
+              <div class="avatar" style="background-image:url('https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=120&q=80');background-size:cover;background-position:center;color:transparent;">AM</div>
+              <div><div class="name">Amara Mensah</div><div class="role">Founder · Helix</div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="lead">
+            <span class="eyebrow">05 · Orbits</span>
+            <h2 style="margin-top:16px">Pick your altitude.</h2>
+          </div>
+          <p>Every tier includes unlimited scenes, the render cluster, and the full component library. You pay for throughput and seats.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="glass tier reveal">
+            <div class="kicker">Low orbit</div>
+            <div>
+              <div class="price">$0<span>/ forever</span></div>
+              <p style="margin-top:10px">Solo creators kicking the tires. 4 scenes, watermark, community support.</p>
+            </div>
+            <ul>
+              <li>720p renders</li>
+              <li>Community Discord</li>
+              <li>4 scenes / month</li>
+              <li>Aether watermark</li>
+            </ul>
+            <a href="#" class="btn btn-ghost">Launch free</a>
+          </article>
+
+          <article class="glass tier featured reveal delay-1">
+            <div class="kicker">Geosync · most picked</div>
+            <div>
+              <div class="price">$24<span>/ mo</span></div>
+              <p style="margin-top:10px">For the working creator. Unlimited 4K scenes, priority queue, no mark.</p>
+            </div>
+            <ul>
+              <li>4K renders, no watermark</li>
+              <li>Priority render cluster</li>
+              <li>Unlimited scenes</li>
+              <li>Commercial license</li>
+              <li>Custom domain hosting</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Enter geosync</a>
+          </article>
+
+          <article class="glass tier reveal delay-2">
+            <div class="kicker">Deep space</div>
+            <div>
+              <div class="price">$96<span>/ mo · per seat</span></div>
+              <p style="margin-top:10px">Studios & agencies. Shared libraries, audit trails, dedicated GPUs.</p>
+            </div>
+            <ul>
+              <li>Everything in Geosync</li>
+              <li>Team libraries & roles</li>
+              <li>Dedicated GPU pool</li>
+              <li>SSO & audit trails</li>
+              <li>Priority onboarding</li>
+            </ul>
+            <a href="#" class="btn btn-ghost">Book a flight</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta" id="cta">
+      <div class="backglow"></div>
+      <div class="container">
+        <span class="eyebrow reveal">06 · Departure</span>
+        <h2 class="reveal delay-1" style="margin-top:16px">Your universe<br/><span class="text-gradient">is overdue.</span></h2>
+        <p class="reveal delay-2">Early access is rolling out in waves. Join the manifest — we'll send a boarding pass when your slot opens.</p>
+        <div class="cta-row reveal delay-3">
+          <a class="btn btn-primary" href="#" data-magnet>
+            Start creating in the cosmos
+            <span class="arrow" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+          <a class="btn btn-ghost" href="#" data-magnet>
+            <span class="play" aria-hidden="true">
+              <svg width="8" height="8" viewBox="0 0 8 8"><path d="M1 0.5L7 4L1 7.5V0.5Z" fill="currentColor"/></svg>
+            </span>
+            Watch 2-minute demo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="foot-grid">
+          <div class="foot-brand">
+            <div class="brand"><span class="brand-mark" aria-hidden="true"></span> Aether</div>
+            <p style="font-size:14px">The operating system for cosmic creators. Made on a small planet, rendered on a big cluster.</p>
+          </div>
+          <div class="foot-col">
+            <h5>Product</h5>
+            <ul><li><a href="#">Features</a></li><li><a href="#">Pricing</a></li><li><a href="#">Changelog</a></li><li><a href="#">Roadmap</a></li></ul>
+          </div>
+          <div class="foot-col">
+            <h5>Resources</h5>
+            <ul><li><a href="#">Docs</a></li><li><a href="#">API</a></li><li><a href="#">Templates</a></li><li><a href="#">Brand kit</a></li></ul>
+          </div>
+          <div class="foot-col">
+            <h5>Company</h5>
+            <ul><li><a href="#">About</a></li><li><a href="#">Careers</a></li><li><a href="#">Press</a></li><li><a href="#">Contact</a></li></ul>
+          </div>
+          <div class="foot-col">
+            <h5>Orbit</h5>
+            <ul><li><a href="#">Twitter / X</a></li><li><a href="#">Instagram</a></li><li><a href="#">Discord</a></li><li><a href="#">YouTube</a></li></ul>
+          </div>
+        </div>
+        <div class="foot-bottom">
+          <div>© 2026 AETHER SPACEWORKS, INC.</div>
+          <div>v2.0.7 — uplink stable</div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- TWEAKS PANEL -->
+  <aside class="tweaks" id="tweaks" aria-label="Design tweaks">
+    <h5>Tweaks</h5>
+    <div class="group">
+      <label>Mood</label>
+      <div class="row" id="tw-mood">
+        <button class="chip" data-mood="cosmic">Cosmic</button>
+        <button class="chip" data-mood="cyber">Cyber</button>
+        <button class="chip" data-mood="void">Void</button>
+      </div>
+    </div>
+    <div class="group">
+      <label>Accent</label>
+      <div class="row" id="tw-accent">
+        <button class="chip swatch" data-accent="default" style="background:linear-gradient(135deg,#6366f1,#22d3ee)"></button>
+        <button class="chip swatch" data-accent="cyan" style="background:linear-gradient(135deg,#22d3ee,#67e8f9)"></button>
+        <button class="chip swatch" data-accent="magenta" style="background:linear-gradient(135deg,#ec4899,#a855f7)"></button>
+        <button class="chip swatch" data-accent="chroma" style="background:linear-gradient(135deg,#6366f1,#f472b6,#22d3ee)"></button>
+      </div>
+    </div>
+    <div class="group">
+      <label>Glass intensity <span class="val" id="tw-glass-val">70</span></label>
+      <input type="range" min="0" max="100" step="5" id="tw-glass" />
+    </div>
+    <div class="group">
+      <label>Animation <span class="val" id="tw-anim-val">heavy</span></label>
+      <div class="row" id="tw-anim">
+        <button class="chip" data-anim="subtle">Subtle</button>
+        <button class="chip" data-anim="moderate">Moderate</button>
+        <button class="chip" data-anim="heavy">Heavy</button>
+      </div>
+    </div>
+  </aside>
+
+  <script>
+    // ============ Tweak defaults (persisted) ============
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "mood": "cosmic",
+      "accent": "default",
+      "glass": 90,
+      "anim": "heavy"
+    }/*EDITMODE-END*/;
+
+    (function () {
+      // ============ starfield ============
+      const canvas = document.getElementById('stars-canvas');
+      const ctx = canvas.getContext('2d');
+      let w, h, stars = [], dpr = Math.min(window.devicePixelRatio || 1, 2);
+      function resize() {
+        w = canvas.width = window.innerWidth * dpr;
+        h = canvas.height = window.innerHeight * dpr;
+        canvas.style.width = window.innerWidth + 'px';
+        canvas.style.height = window.innerHeight + 'px';
+        const count = Math.floor((w * h) / (14000 * dpr));
+        stars = Array.from({ length: count }, () => ({
+          x: Math.random() * w,
+          y: Math.random() * h,
+          z: Math.random() * 0.8 + 0.2,
+          r: Math.random() * 1.2 * dpr + 0.2,
+          tw: Math.random() * Math.PI * 2,
+          speed: Math.random() * 0.0015 + 0.0008
+        }));
+      }
+      resize();
+      window.addEventListener('resize', resize);
+      let mouseX = 0, mouseY = 0, tmouseX = 0, tmouseY = 0;
+      window.addEventListener('mousemove', e => {
+        tmouseX = (e.clientX / window.innerWidth - 0.5);
+        tmouseY = (e.clientY / window.innerHeight - 0.5);
+      });
+      function draw(t) {
+        ctx.clearRect(0, 0, w, h);
+        mouseX += (tmouseX - mouseX) * 0.04;
+        mouseY += (tmouseY - mouseY) * 0.04;
+        for (const s of stars) {
+          s.tw += s.speed * 16;
+          const alpha = 0.4 + Math.sin(s.tw) * 0.5;
+          const px = s.x + mouseX * 24 * s.z * dpr;
+          const py = s.y + mouseY * 24 * s.z * dpr;
+          ctx.globalAlpha = Math.max(0, alpha) * s.z;
+          ctx.fillStyle = s.z > 0.8 ? '#c7d2fe' : '#ffffff';
+          ctx.beginPath();
+          ctx.arc(px, py, s.r, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        ctx.globalAlpha = 1;
+        requestAnimationFrame(draw);
+      }
+      requestAnimationFrame(draw);
+
+      // ============ cursor ============
+      const cursor = document.getElementById('cursor');
+      const dot = document.getElementById('cursorDot');
+      let cx = 0, cy = 0, dx = 0, dy = 0;
+      window.addEventListener('mousemove', e => { tx = e.clientX; ty = e.clientY; dot.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%,-50%)`; });
+      let tx = 0, ty = 0;
+      function tickCursor() {
+        cx += (tx - cx) * 0.18;
+        cy += (ty - cy) * 0.18;
+        cursor.style.transform = `translate(${cx}px, ${cy}px) translate(-50%,-50%)`;
+        requestAnimationFrame(tickCursor);
+      }
+      requestAnimationFrame(tickCursor);
+
+      // Magnetic + hover states
+      document.querySelectorAll('a, button, [data-magnet]').forEach(el => {
+        el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+        el.addEventListener('mouseleave', () => { cursor.classList.remove('hover'); el.style.transform = ''; });
+        el.addEventListener('mousemove', e => {
+          if (!el.hasAttribute('data-magnet') && !el.classList.contains('btn')) return;
+          const r = el.getBoundingClientRect();
+          const mx = e.clientX - (r.left + r.width / 2);
+          const my = e.clientY - (r.top + r.height / 2);
+          el.style.transform = `translate(${mx * 0.2}px, ${my * 0.25}px)`;
+        });
+      });
+
+      // ============ scroll progress ============
+      const sp = document.getElementById('scrollProgress');
+      window.addEventListener('scroll', () => {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        const p = Math.min(1, Math.max(0, window.scrollY / max));
+        sp.style.width = (p * 100) + '%';
+      }, { passive: true });
+
+      // ============ reveal on scroll ============
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+      // ============ parallax ============
+      const parallax = [...document.querySelectorAll('[data-parallax]')];
+      const heroBg = document.getElementById('heroBg');
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY;
+        if (heroBg && y < window.innerHeight * 1.2) {
+          heroBg.style.transform = `translateY(${y * 0.3}px)`;
+          heroBg.style.opacity = Math.max(0.15, 1 - y / 1000);
+        }
+        parallax.forEach(el => {
+          const rate = parseFloat(el.getAttribute('data-parallax'));
+          const r = el.getBoundingClientRect();
+          if (r.bottom < 0 || r.top > window.innerHeight) return;
+          const off = (window.innerHeight / 2 - (r.top + r.height / 2)) * rate * 0.15;
+          el.style.setProperty('--py', off + 'px');
+          const base = el.classList.contains('orb') ? '' : '';
+          el.style.transform = `translateY(${off}px)`;
+        });
+      }, { passive: true });
+
+      // ============ 3D tilt on feature cards ============
+      document.querySelectorAll('[data-tilt]').forEach(el => {
+        el.addEventListener('mousemove', (e) => {
+          const r = el.getBoundingClientRect();
+          const mx = (e.clientX - r.left) / r.width - 0.5;
+          const my = (e.clientY - r.top) / r.height - 0.5;
+          el.style.transform = `perspective(900px) rotateX(${my * -6}deg) rotateY(${mx * 8}deg) translateY(-4px)`;
+        });
+        el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+      });
+
+      // ============ hero bg subtle cursor follow ============
+      window.addEventListener('mousemove', (e) => {
+        if (!heroBg) return;
+        const mx = (e.clientX / window.innerWidth - 0.5);
+        heroBg.style.filter = `hue-rotate(${mx * 10}deg)`;
+      });
+
+      // ============ showcase drag-to-scroll with momentum ============
+      const sc = document.getElementById('showcaseScroller');
+      let isDown = false, startX = 0, startScroll = 0, vel = 0, lastX = 0, lastT = 0;
+      sc.addEventListener('pointerdown', (e) => { isDown = true; startX = e.clientX; startScroll = sc.scrollLeft; lastX = e.clientX; lastT = performance.now(); sc.setPointerCapture(e.pointerId); sc.style.cursor = 'grabbing'; });
+      sc.addEventListener('pointermove', (e) => {
+        if (!isDown) return;
+        const dx = e.clientX - startX;
+        sc.scrollLeft = startScroll - dx;
+        const t = performance.now();
+        vel = (e.clientX - lastX) / Math.max(1, t - lastT);
+        lastX = e.clientX; lastT = t;
+      });
+      function endDrag() { if (!isDown) return; isDown = false; sc.style.cursor = ''; const start = performance.now(); const v0 = vel; function mo() { const t = performance.now() - start; const dec = Math.exp(-t / 400); sc.scrollLeft -= v0 * 16 * dec; if (dec > 0.01) requestAnimationFrame(mo); } requestAnimationFrame(mo); }
+      sc.addEventListener('pointerup', endDrag);
+      sc.addEventListener('pointercancel', endDrag);
+      sc.addEventListener('wheel', (e) => {
+        if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+        // translate vertical wheel to horizontal when hovering the scroller
+        if (e.deltaY !== 0) { sc.scrollLeft += e.deltaY; e.preventDefault(); }
+      }, { passive: false });
+
+      // ============ TWEAKS ============
+      const tweaksPanel = document.getElementById('tweaks');
+      let state = { ...TWEAK_DEFAULTS };
+
+      function applyState() {
+        document.body.classList.remove('mood-cosmic','mood-cyber','mood-void');
+        document.body.classList.add('mood-' + state.mood);
+        document.body.classList.remove('accent-default','accent-cyan','accent-magenta','accent-chroma');
+        document.body.classList.add('accent-' + state.accent);
+        // glass
+        const blur = 8 + (state.glass / 100) * 40; // 8..48
+        document.documentElement.style.setProperty('--glass-blur', blur + 'px');
+        const bgA = 0.02 + (state.glass / 100) * 0.08;
+        document.documentElement.style.setProperty('--glass-bg', `rgba(255,255,255,${bgA.toFixed(3)})`);
+        const strokeA = 0.05 + (state.glass / 100) * 0.12;
+        document.documentElement.style.setProperty('--glass-stroke', `rgba(255,255,255,${strokeA.toFixed(3)})`);
+        document.getElementById('tw-glass').value = state.glass;
+        document.getElementById('tw-glass-val').textContent = state.glass;
+        document.getElementById('tw-anim-val').textContent = state.anim;
+        // animation intensity: throttle heavy effects
+        document.body.dataset.anim = state.anim;
+        if (state.anim === 'subtle') {
+          document.querySelectorAll('.orb').forEach(o => o.style.animation = 'none');
+        } else {
+          document.querySelectorAll('.orb').forEach((o,i) => o.style.animation = `float 10s ease-in-out ${-2 * i}s infinite`);
+        }
+        // set active chips
+        document.querySelectorAll('#tw-mood .chip').forEach(c => c.classList.toggle('active', c.dataset.mood === state.mood));
+        document.querySelectorAll('#tw-accent .chip').forEach(c => c.classList.toggle('active', c.dataset.accent === state.accent));
+        document.querySelectorAll('#tw-anim .chip').forEach(c => c.classList.toggle('active', c.dataset.anim === state.anim));
+      }
+
+      function persist(partial) {
+        Object.assign(state, partial);
+        applyState();
+        try {
+          window.parent.postMessage({ type: '__edit_mode_set_keys', edits: partial }, '*');
+        } catch(e) {}
+      }
+
+      document.querySelectorAll('#tw-mood .chip').forEach(c => c.addEventListener('click', () => persist({ mood: c.dataset.mood })));
+      document.querySelectorAll('#tw-accent .chip').forEach(c => c.addEventListener('click', () => persist({ accent: c.dataset.accent })));
+      document.querySelectorAll('#tw-anim .chip').forEach(c => c.addEventListener('click', () => persist({ anim: c.dataset.anim })));
+      document.getElementById('tw-glass').addEventListener('input', (e) => persist({ glass: parseInt(e.target.value, 10) }));
+
+      applyState();
+
+      // Edit-mode availability protocol
+      window.addEventListener('message', (e) => {
+        const d = e.data || {};
+        if (d.type === '__activate_edit_mode') tweaksPanel.classList.add('show');
+        if (d.type === '__deactivate_edit_mode') tweaksPanel.classList.remove('show');
+      });
+      try { window.parent.postMessage({ type: '__edit_mode_available' }, '*'); } catch(e) {}
+    })();
+  </script>
+</body>
+</html>
